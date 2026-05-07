@@ -7,13 +7,13 @@ Proyecto de ejemplo que genera un backlog técnico a partir de una historia de u
 
 Dependencias
 ------------
-Listado de dependencias Python (ver `requirements.txt`):
+Listado de dependencias Python en `requirements.txt`:
 
-- `ollama` — cliente Python para comunicar con Ollama local
-- `python-dotenv` — carga variables de entorno desde `.env`
-- `requests` — utilidades HTTP
-- `fastapi`, `uvicorn` — opcionales si expones una API
-- `pytest` — pruebas (opcional)
+- `ollama` 
+- `python-dotenv`
+- `requests` 
+- `fastapi`, `uvicorn` 
+- `pytest` 
 
 Preparación del entorno (PowerShell)
 -----------------------------------
@@ -33,7 +33,6 @@ Los modelos deben descargarse localmente con la CLI de Ollama. Ejemplos:
 ```powershell
 ollama list
 ollama pull qwen2.5-coder:1.5b
-ollama pull deepseek-coder:1.3b
 ```
 
 Configuración de entorno
@@ -56,21 +55,10 @@ Para lanzar `OpenCode` con Ollama en PowerShell del equipo, ejecuta:
 ollama launch opencode
 ```
 
-Ejecución del ejemplo
----------------------
-```powershell
-Set-Location C:\Users\sofia\Downloads\Taller_10\app
-python main.py
-```
-
-Salida
-------
-El script genera el backlog y lo guarda en `outputs/backlog.json`.
-
 Notas adicionales
 ----------------
 - Para cambiar el modelo por defecto exporta `OLLAMA_MODEL` o edita `.env`.
-- Si usas Windows y hay problemas creando `venv`, cierra procesos que puedan bloquear archivos y prueba de nuevo (ver historial de la conversación para soluciones comunes).
+- Si usas Windows y hay problemas creando `venv`, cierra procesos que puedan bloquear archivos y prueba de nuevo.
 
 # AI Task Planner
 
@@ -81,23 +69,22 @@ Tecnologías:
 - Ollama
 - OpenCode
 - qwen2.5-coder
-- deepseek-coder
 
 Flujo:
 Historia de Usuario → PM Agent → Backlog Técnico → OpenCode → Boilerplate
 
 Comandos en PowerShell para perparar entorno:
 
-# activar venv (ya tienes uno)
+# Activar venv
 .\venv\Scripts\Activate.ps1
 
-# instalar dependencias
+# Instalar dependencias
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 
-# verifica modelos disponibles
+# Verifica modelos disponibles
 ollama list
 
-# bajar los modelos requeridos (descarga local)
+# Bajar los modelos requeridos (descarga local)
 ollama pull qwen2.5-coder:1.5b
 ollama pull deepseek-coder:1.3b
