@@ -1,0 +1,30 @@
+{
+  "epic": "",
+  "tasks": [
+    {
+      "title": "Definir Epíc",
+      "description": "Crear un epíc llamado 'Autenticación' para definir los objetivos generales de este backlog.",
+      "priority": "high"
+    },
+    {
+      "title": "Identificar Funcionalidades Principales",
+      "description": "Listar las siguientes funcionalidades que deben incluir en el epíc:",
+      "priority": "medium"
+    },
+    {
+      "title": "Dividir Tareas Complejas",
+      "description": "Descomponer las funcionalidades identificadas en tareas más pequeñas para gestionarlas de manera eficiente.",
+      "priority": "low"
+    },
+    {
+      "title": "Priorizar Tareas",
+      "description": "Asignar prioridades a cada tarea dependiendo del alcance y importancia, incluyendo 'high', 'medium' y 'low'.",
+      "priority": "low"
+    },
+    {
+      "title": "Proporcionar Estructura Técnica Inicial",
+      "description": "Construir la estructura inicial de tareas en formato JSON que se pueda usar para planificar la implementación del proyecto.",
+      "priority": "high"
+    }
+  ]
+}
